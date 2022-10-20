@@ -72,14 +72,24 @@ public class Matrix {
         return new int[] {sorIndex, oszlopIndex};
     }
 
-    public double sorOsszeg(int sor){
+    public int sorOsszeg(int sor){
         int oszlopIndex = 0;
-        double osszeg = 0;
+        int osszeg = 0;
         while(oszlopIndex < this.m[sor-1].length){
             oszlopIndex++;
             osszeg += this.m[sor-1][oszlopIndex-1];
         }
         return osszeg;
+    }
+
+    public int maxElemOszlop(int oszlop){
+        int max = this.m[0][oszlop-1];
+        for (int i = 0; i < this.m.length; i++) {
+            if (this.m[i][oszlop-1]>max){
+                max = this.m[i][oszlop-1];
+            }
+        }
+        return max;
     }
 
     @Override
