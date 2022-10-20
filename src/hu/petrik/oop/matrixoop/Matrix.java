@@ -72,6 +72,16 @@ public class Matrix {
         return new int[] {sorIndex, oszlopIndex};
     }
 
+    public double sorOsszeg(int sor){
+        int oszlopIndex = 0;
+        double osszeg = 0;
+        while(oszlopIndex < this.m[sor-1].length){
+            oszlopIndex++;
+            osszeg += this.m[sor-1][oszlopIndex-1];
+        }
+        return osszeg;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

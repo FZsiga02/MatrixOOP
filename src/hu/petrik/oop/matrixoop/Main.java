@@ -11,7 +11,8 @@ public class Main {
         //System.out.println(m2.getElemekOsszege());
         //System.out.println(m2.getPozitivElemekSzama());
         //System.out.println(m2.getLegnagyobbElem());
-        System.out.println(m2.getElsoPozitivElem()[0] + " " + m2.getElsoPozitivElem()[1]);
+        //System.out.println(m2.getElsoPozitivElem()[0] + " " + m2.getElsoPozitivElem()[1]);
+        System.out.println(m2.sorOsszeg(1));
         System.out.println();
     }
 }
